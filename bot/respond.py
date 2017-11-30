@@ -12,4 +12,4 @@ def mention_func(message):
         message.reply('明日は何も出せないよ！')
     else:
         tomorrow_scedule = ', '.join(scedule.of_weekday(tomorrow_weekday))
-        message.reply(f"{'明日のゴミは' + tomorrow_scedule + 'だよ！'}")
+        message.reply(f"{'明日のゴミは' + ' *' + tomorrow_scedule + '* ' + 'だよ！'}")
