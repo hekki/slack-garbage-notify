@@ -5,8 +5,8 @@ from bot.schedule import Scedule
 @respond_to(r'^.*今日.*ごみ.*$')
 @respond_to(r'^.*今日.*ゴミ.*$')
 def mention_func(message):
-    from datetime import date, datetime
-    today_weekday = datetime.today().weekday()
+    from datetime import date
+    today_weekday = date.today().weekday()
 
     scedule = Scedule()
     if scedule.of_weekday(today_weekday) is None:
@@ -21,8 +21,9 @@ def mention_func(message):
 @respond_to(r'^ごみ$')
 @respond_to(r'^ゴミ$')
 def mention_func(message):
-    from datetime import date, datetime
-    tomorrow_weekday = datetime.today().weekday() + 1
+    from datetime import date, timedelta
+    tomorrow = date.today() + timedelta(days=1)
+    tomorrow_weekday = tomorrow.weekday()
 
     scedule = Scedule()
     if scedule.of_weekday(tomorrow_weekday) is None:
