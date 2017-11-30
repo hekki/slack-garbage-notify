@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# original config
+slackbot_settings.py
