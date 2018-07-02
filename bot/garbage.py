@@ -5,5 +5,8 @@ TYPE = {
     'pet': 'ペットボトル',
     'bottle': 'びん',
     'can': '缶',
-    'plastic': 'プラスチック'
+    'plastic': 'プラスチック',
+    'dry_cell': '乾電池',
+    'spray_can': 'スプレー缶',
+    'cloth': '布類'
 }
