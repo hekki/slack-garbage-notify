@@ -2,8 +2,8 @@ from slackbot.bot import respond_to
 from bot.schedule import Scedule
 
 
-@respond_to(r'^.*今日.*ごみ.*$')
-@respond_to(r'^.*今日.*ゴミ.*$')
+@respond_to(r'^ごみ$')
+@respond_to(r'^ゴミ$')
 def mention_func(message):
     from datetime import date
 
@@ -15,10 +15,7 @@ def mention_func(message):
         message.reply(f"{'今日のゴミは' + ' *' + today_scedule + '* ' + 'だよ！'}")
 
 
-@respond_to(r'^.*明日.*ごみ.*$')
-@respond_to(r'^.*明日.*ゴミ.*$')
-@respond_to(r'^ごみ$')
-@respond_to(r'^ゴミ$')
+@respond_to(r'^.*明日.*$')
 def mention_func(message):
     from datetime import date, timedelta
     tomorrow = date.today() + timedelta(days=1)
