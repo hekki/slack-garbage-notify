@@ -1,7 +1,7 @@
 certifi==2017.11.5
 chardet==3.0.4
 idna==2.6
-pycodestyle==2.3.1
+pycodestyle==2.5.0
 requests==2.18.4
 six==1.11.0
 slackbot==0.5.1
