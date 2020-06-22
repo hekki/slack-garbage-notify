@@ -1,4 +1,4 @@
-certifi==2017.11.5
+certifi==2020.6.20
 chardet==3.0.4
 idna==2.6
 pycodestyle==2.3.1
