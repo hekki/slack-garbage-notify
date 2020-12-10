@@ -1,5 +1,5 @@
 certifi==2017.11.5
-chardet==3.0.4
+chardet==4.0.0
 idna==2.6
 pycodestyle==2.3.1
 requests==2.18.4
