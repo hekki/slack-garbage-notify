@@ -7,4 +7,4 @@ six==1.11.0
 slackbot==0.5.1
 slacker==0.9.60
 urllib3==1.22
-websocket-client==0.44.0
+websocket-client==0.59.0
